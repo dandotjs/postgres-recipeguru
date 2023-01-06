@@ -6,15 +6,15 @@ run `npm i`
 
 ## Docker Setup
 
-run `docker pull postgres:14`
-run `docker run -e POSTGRES_PASSWORD=<password> --name=pg --rm -d -p 5432:5432 postgres:14`. This uses the default port for postgres but can be changed if needed.
+run `docker pull postgres:14`  
+run `docker run -e POSTGRES_PASSWORD=<password> --name=pg --rm -d -p 5432:5432 postgres:14`. This uses the default port for postgres but can be changed if needed.  
 run `docker exec -u postgres -it pg psql`
 
 ## DB Setup
 
 Once connected to the psql client, ensure you are in the root directory and run the following commands:
-`CREATE DATABASE recipeguru;`
-`-U postgres -p 5432 -d recipeguru -f ./queries/create-ingredients-table.txt`
+`CREATE DATABASE recipeguru;`  
+`-U postgres -p 5432 -d recipeguru -f ./queries/create-ingredients-table.txt`  
 `-U postgres -p 5432 -d recipeguru -f ./queries/populate-ingredients-table.txt`
 
 ## Env Setup
