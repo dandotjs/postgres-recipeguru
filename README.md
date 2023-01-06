@@ -12,14 +12,15 @@ run `docker exec -u postgres -it pg psql`
 
 ## DB Setup
 
-Once connected to the psql client, ensure you are in the root directory and run the following commands:
+Once connected to the psql client, ensure you are in the root directory and run the following commands:  
 `CREATE DATABASE recipeguru;`  
 `-U postgres -p 5432 -d recipeguru -f ./queries/create-ingredients-table.txt`  
 `-U postgres -p 5432 -d recipeguru -f ./queries/populate-ingredients-table.txt`
 
 ## Env Setup
 
-Create a .env in the root directory with the following `DB_USER="postgres" DB_PASSWORD=<password> DB_PORT=<port> DB_NAME="recipeguru" DB_HOST="localhost"`
+Create a .env in the root directory with the following  
+`DB_USER="postgres" DB_PASSWORD=<password> DB_PORT=<port> DB_NAME="recipeguru" DB_HOST="localhost"`
 
 ## Running the Server
 
